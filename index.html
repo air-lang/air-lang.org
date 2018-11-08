@@ -8,12 +8,25 @@
         padding: 0;
         margin: 0;
         height: 100%;
+        width: 100%;
       }
       html {
-        background: #0096ff url('airlang.svg') no-repeat center center;
+        background: #0096ff;
+      }
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
       }
     </style>
+    <script src="script.js"></script>
   </head>
   <body>
+    <svg id="anim">
+      <polyline class="line1" fill="none" stroke="white" stroke-linecap="round" />
+      <polyline class="line2" fill="none" stroke="white" stroke-linecap="round" />
+      <polyline class="line3" fill="none" stroke="white" stroke-linecap="round" />
+    </svg>
   </body>
 </html>
