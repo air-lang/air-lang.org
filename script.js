@@ -39,7 +39,7 @@ window.onload = function() {
         var points = []
         for (var x = 0; x < (width / step); x++) {
             var y = sine(x * step)
-            points.push([0.1 * unit + x * step, y + width / 3 * i + unit * 0.1])
+            points.push([ y + width / 3 * i + unit * 0.1, 0.1 * unit + x * step])
         }
 
         svg.children[i].setAttribute('points', points.join(','))
